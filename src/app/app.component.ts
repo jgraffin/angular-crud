@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  myParentNumber = 0;
+
   title = 'angular-course';
+
+  onChangeNumberParent() {
+    this.myParentNumber = Math.floor(Math.random() * 1000);
+  }
 }
